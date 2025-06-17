@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido a tu suscripción</title>
+    <!-- Estilos igual que antes -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!--#if (*|LANGUAGE|* = "es")-->
+            <h1>¡Bienvenido, *|FNAME|* *|LNAME|*!</h1>
+            <!--#elseif (*|LANGUAGE|* = "en")-->
+            <h1>Welcome, *|FNAME|* *|LNAME|*!</h1>
+            <!--#endif-->
+        </div>
+        <div class="content">
+            <!--#if (*|LANGUAGE|* = "es")-->
+            <p>Hola *|FNAME|*,</p>
+            <p>Gracias por suscribirte a nuestro <strong>Plan Premium</strong>. Aquí están los detalles de tu
+                suscripción:</p>
+            <h3>Beneficios de tu plan</h3>
+            <ul class="benefits-list">
+                <li>Tendrás acceso a toda nuestra información exclusiva.</li>
+            </ul>
+            <p>Estamos emocionados de tenerte con nosotros. Si tienes alguna pregunta, no dudes en contactarnos.</p>
+            <!--#elseif (*|LANGUAGE|* = "en")-->
+            <p>Hello *|FNAME|*,</p>
+            <p>Thank you for subscribing to our <strong>Premium Plan</strong>. Here are the details of your
+                subscription:</p>
+            <h3>Benefits of your plan</h3>
+            <ul class="benefits-list">
+                <li>You will have access to all our exclusive information.</li>
+            </ul>
+            <p>We’re excited to have you with us. If you have any questions, feel free to contact us.</p>
+            <!--#endif-->
+            <ul>
+                <li><strong><!--#if (*|LANGUAGE|* = "es")-->Nombre del plan<!--#else-->Plan name<!--#endif-->:</strong>
+                    <!--#if (*|LANGUAGE|* = "es")-->Plan Premium<!--#else-->Premium Plan<!--#endif--></li>
+                <li><strong><!--#if (*|LANGUAGE|* = "es")-->Valor mensual<!--#else-->Monthly
+                        value<!--#endif-->:</strong> $24 USD</li>
+                <li><strong><!--#if (*|LANGUAGE|* = "es")-->ID de transacción<!--#else-->Transaction
+                        ID<!--#endif-->:</strong> *|TRANSID|*</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+            <p><a href="*|UNSUB|*">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
