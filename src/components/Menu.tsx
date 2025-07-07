@@ -84,11 +84,11 @@ export default function Menu({ isMenuOpen, setIsMenuOpen, handleMenuClick }: Men
       submenu: [],
       path: language === 'es' ? '/servicios' : '/services',
     },
-    {
-      label: t.payments,
-      hasSubmenu: false,
-      path: language === 'es' ? '/pagos' : '/payments',
-    },
+    //{
+      //label: t.payments,
+      //hasSubmenu: false,
+      //path: language === 'es' ? '/pagos' : '/payments',
+    //},
   ];
 
   const toggleSubmenu = (index: number) => {
