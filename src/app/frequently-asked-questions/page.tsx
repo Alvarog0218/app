@@ -1,11 +1,16 @@
-import FaqsPage from "@/components/FaqsPage";
+import { redirect } from 'next/navigation';
 import { Metadata } from "next";
 
+// El metadata sigue siendo útil para los motores de búsqueda
 export const metadata: Metadata = {
-  title: "Frequently asked questions - Bigdatia",
-  description: "BIGDATIA is an innovation and technology ecosystem that uses artificial intelligence and data analysis to optimize decision-making in businesses, the sports sector, electoral processes, and technology. We connect strategy and technology to transform industries and drive growth.",
+  title: "Contacto por WhatsApp - Bigdatia",
+  description: "Chatea con nosotros directamente en WhatsApp.",
 };
 
-export default function Faqs() {
-  return <FaqsPage />;
+export default function ContactoPage() {
+  // Reemplaza el número con tu número de WhatsApp
+  // incluyendo el código de país (57 para Colombia), sin espacios ni símbolos
+  redirect('https://wa.me/573223765218');
+
+  // No es necesario retornar nada, la redirección interrumpe la renderización.
 }

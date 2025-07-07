@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ContactoPage() {
   // Reemplaza el número con tu número de WhatsApp
   // incluyendo el código de país (57 para Colombia), sin espacios ni símbolos
-  redirect('https://wa.me/573150638446');
+  redirect('https://wa.me/573223765218');
 
   // No es necesario retornar nada, la redirección interrumpe la renderización.
 }
