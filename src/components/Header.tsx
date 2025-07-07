@@ -54,11 +54,11 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
       submenu: [],
       path: language === 'es' ? '/servicios' : '/services',
     },
-    {
-      label: t.payments,
-      hasSubmenu: false,
-      path: language === 'es' ? '/pagos' : '/payments',
-    },
+    ///{
+      ///label: t.payments,
+      ///hasSubmenu: false,
+      ///path: language === 'es' ? '/pagos' : '/payments',
+    ///},
   ];
 
   // Función para alternar submenús

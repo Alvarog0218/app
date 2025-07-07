@@ -16,7 +16,6 @@
     "framer-motion": "^12.4.10",
     "mandrill-api": "^1.0.45",
     "next": "15.2.1",
-    "node-mailjet": "^6.0.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-google-recaptcha": "^3.1.0"

@@ -75,7 +75,8 @@ export default function AppContent({ children }: AppContentProps) {
       '/como-funciona': lang === 'es' ? ['como_funciona'] : ['how_it_works'],
       '/preguntas-frecuentes': lang === 'es' ? ['faqs'] : ['faqs'],
       '/frequently-asked-questions': lang === 'es' ? ['faqs'] : ['faqs'],
-
+      '/pagos': lang === 'es' ? ['payments'] : ['payments'],
+      '/payments': lang === 'es' ? ['payments'] : ['payments'],
       '/por-que-elegirnos': lang === 'es' ? ['why_choose_us'] : ['why_choose_us'],
       '/why-choose-us': lang === 'es' ? ['why_choose_us'] : ['why_choose_us'],
       '/mission-vision': lang === 'es' ? ['mision', 'vision'] : ['mission', 'vision'],
